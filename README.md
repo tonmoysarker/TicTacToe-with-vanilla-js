@@ -1,9 +1,9 @@
-Tic Tac Toe Game in Vanilla JavaScript
+#Tic Tac Toe Game in Vanilla JavaScript
 
-Overview
+##Overview
 This project is a simple implementation of the classic Tic Tac Toe game using Vanilla JavaScript. It serves as a practical exercise to demonstrate foundational concepts of JavaScript, including DOM manipulation, event handling, game logic, and user interaction.
 
-Features
+##Features
 User-friendly Interface: Clean and intuitive design to provide an engaging gaming experience.
 Responsive Layout: Responsive design ensures optimal gameplay across various devices and screen sizes.
 Game Logic: Implements the core Tic Tac Toe game logic, allowing players to make moves, determine winners, and reset the game for continuous play.
