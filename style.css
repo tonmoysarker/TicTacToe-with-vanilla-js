@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Oh My";
+    src: url("fonts/oh_my_oh_la_la_yeah_1.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pencil Grid";
+    src: url("fonts/pencilgrid.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    font-family: "Pencil Grid", "Courier New", Courier, monospace;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, #1e3c72 0%, #375fa6 100%);
+    width: 100vw;
+}
+
+.container {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    background-image: url("images/crumpled-paper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.game-heading {
+    padding: 10px;
+}
+.game-heading > .title {
+    font-size: 50px;
+}
+
+.game-heading > #message {
+    font-size: 40px;
+}
+#game-board {
+    width: 70%;
+    margin: 5px auto; /* To center the game board */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* To evenly distribute cells */
+    background-color: darkslategray;
+    border: 2px solid grey;
+}
+
+.cell {
+    background-color: antiquewhite;
+    width: calc((100% - 2 * 5px) / 3); /* Assuming 5px margin between cells */
+    margin-bottom: 5px; /* Add margin to the bottom for spacing */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oh My", "Courier New", Courier, monospace;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+    margin-bottom: 0px;
+}
+
+.btn {
+    margin: 5px 5px;
+    padding: 10px 16px;
+    font-family: "Pencil Grid", "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 5px grey;
+    cursor: pointer;
+    transition: 0.5s background-color;
+}
+
+.btn:hover {
+    background: rgb(238, 192, 132);
+}
+
+.btn:active {
+    box-shadow: 0 2px grey;
+    transform: translateY(3px);
+}
+
+.btn:disabled {
+    background: rgb(238, 192, 132);
+    color: white;
+    cursor: not-allowed;
+}
